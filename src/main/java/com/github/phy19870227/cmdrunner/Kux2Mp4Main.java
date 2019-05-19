@@ -22,6 +22,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class Kux2Mp4Main {
 
+    /**
+     * 转码
+     *
+     * 在同目录下生成mp4文件
+     *
+     * @param args
+     *        [0] ffmpeg.exe 位置
+     *        [1] kux文件所在文件夹
+     */
     public static void main(String[] args) {
         Arrays.stream(args).forEach(s -> System.out.println("arg : " + s));
         String exeFile = args[0];
